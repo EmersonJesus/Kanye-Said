@@ -1,6 +1,7 @@
 *  {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: background 0.5s linear;
 }
 .container {
     position: relative;
@@ -48,4 +50,16 @@ body {
     font-size: 18px;
     background-color: transparent;
     color: #fdfdfd;
+}
+
+img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
 }

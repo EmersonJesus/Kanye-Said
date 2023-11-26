@@ -1,5 +1,13 @@
 const urlApi = "https://api.kanye.rest";
 let quote;
+const imageElement = document.getElementById('kanyeImage');
+let currentImageIndex = 1;
+
+function getRandomImage() {
+    currentImageIndex = (currentImageIndex % 5) + 1; 
+    const imagePath = `images/${currentImageIndex}.png`;
+    imageElement.src = imagePath;
+}
 
 async function getQuote() {
     try {
@@ -25,6 +33,8 @@ async function showQuote() {
 
     // Mudando a cor de fundo ao exibir a citação
     document.body.style.backgroundColor = getRandomColor();
+    // Mudando a imagem do kanye 
+    getRandomImage();
 }
 
 // Função para gerar uma cor aleatória
