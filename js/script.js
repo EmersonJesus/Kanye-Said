@@ -1,7 +1,7 @@
 const urlApi = "https://api.kanye.rest";
 let quote;
 
-async function obterCotacao() {
+async function getQuote() {
     try {
         const resposta = await fetch(urlApi);
 
@@ -18,11 +18,11 @@ async function obterCotacao() {
     }
 }
 
-async function exibirCotacao() {
+async function showQuote() {
     const p = document.querySelector('.quote');
-    quote = await obterCotacao();
-    p.innerText = `${quote}`;
+    quote = await getQuote();
+    p.innerText = `"${quote}"`;
 }
 
 // Chame a função exibirCotacao para obter e exibir a cotação
-exibirCotacao();
+showQuote();
