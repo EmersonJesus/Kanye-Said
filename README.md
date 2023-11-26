@@ -16,6 +16,12 @@ Este é um projeto simples que exibe citações aleatórias de Kanye West e alte
 - `styles.css`: Arquivo CSS com estilos para a aplicação.
 - `script.js`: Arquivo JavaScript com lógica do aplicativo.
 
+# Demo
+
+Veja o projeto em ação [aqui](https://yesaid.netlify.app/).
+
 ## Contribuição
 
 Contribuições são bem-vindas! Se você encontrar bugs, tiver sugestões ou melhorias, sinta-se à vontade para criar uma "issue" ou enviar um "pull request".
+
+Desenvolvido  por [Emerson Jesus](https://github.com/EmersonJesus)
