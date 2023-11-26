@@ -38,7 +38,7 @@ body {
     margin-bottom: 50px;
 }
 
-.btn-quote {
+#btn-quote {
     cursor: pointer;
     outline: none;
     transition: all .3s ease;
@@ -47,6 +47,5 @@ body {
     border-radius: 1rem;
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: bold;
-    color: white;
+    color: #000;
 }

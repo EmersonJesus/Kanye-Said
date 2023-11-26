@@ -26,3 +26,5 @@ async function showQuote() {
 
 // Chame a função exibirCotacao para obter e exibir a cotação
 showQuote();
+// Adicionando um ouvinte de evento para o clique do botão
+document.getElementById('btn-quote').addEventListener('click', showQuote);
