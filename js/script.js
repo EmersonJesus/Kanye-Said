@@ -22,6 +22,19 @@ async function showQuote() {
     const p = document.querySelector('.quote');
     quote = await getQuote();
     p.innerText = `"${quote}"`;
+
+    // Mudando a cor de fundo ao exibir a citação
+    document.body.style.backgroundColor = getRandomColor();
+}
+
+// Função para gerar uma cor aleatória
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
 
 // Chame a função exibirCotacao para obter e exibir a cotação

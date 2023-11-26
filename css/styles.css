@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: green;
     color: #fdfdfd;
     display: flex;
     justify-content: center;
@@ -43,9 +42,10 @@ body {
     outline: none;
     transition: all .3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    border: 0;
+    border: 2px solid #000;
     border-radius: 1rem;
     padding: 10px 20px;
     font-size: 18px;
-    color: #000;
+    background-color: transparent;
+    color: #fdfdfd;
 }
