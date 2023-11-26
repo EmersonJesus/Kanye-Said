@@ -6,7 +6,7 @@ let currentImageIndex = 1;
 function getRandomImage() {
     currentImageIndex = (currentImageIndex % 5) + 1; 
     const imagePath = `images/${currentImageIndex}.png`;
-    imageElement.src = imagePath;
+    return imagePath;
 }
 
 async function getQuote() {
@@ -34,7 +34,7 @@ async function showQuote() {
     // Mudando a cor de fundo ao exibir a citação
     document.body.style.backgroundColor = getRandomColor();
     // Mudando a imagem do kanye 
-    getRandomImage();
+    imageElement.src = getRandomImage();
 }
 
 // Função para gerar uma cor aleatória
